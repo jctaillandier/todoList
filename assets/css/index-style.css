@@ -1,0 +1,79 @@
+body{
+    font-family: roboto; 
+    background: linear-gradient(to right, #dd3e54, #6be585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#container{
+    width:360px;
+    margin: 100px auto;
+    background-color:#F7F7F7;
+    box-shadow: 0 0 3px rgb(0,0,0, 0.1);
+}
+
+h1{
+    background-color: #2980b9;
+    color:white;
+    padding:10px 20px;
+    margin:0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+.fas.fa-plus{
+    float:right;
+}
+
+input{
+    width:100%;
+    padding: 13px 13px 13px 20px;
+    font-size:18px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    color:#2980b9;
+    border: 3px solid rgba(0,0,0,0);
+}
+/*When you select the input box, the box surrounding (theres a default browser blue-ish*/
+input:focus{
+    background-color: white;
+    border:3px solid #2980b9;
+    outline:none; /*thats the default blue outline*/
+}
+
+ul{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+/*
+* make even li background white, even greyish
+*/
+li{
+    background:white;
+    height:40px;
+    line-height:40px;
+    color:#666;
+}
+li:nth-child(2n){
+    background-color:#F7F7F7;
+}
+
+span{
+    background: #E74C3C;
+    height:40px;
+    margin-right: 20px;
+    text-align: center;
+    color:white;
+    width:0px;
+    display:inline-block;
+    transition: 0.3s linear;
+    opacity: 0;
+}
+li:hover span{
+    width:40px;
+    opacity:1.0;
+}
+
+.strikeIt{
+    color:grey;
+    text-decoration: line-through;
+}
